@@ -1,2 +1,3 @@
-# mentalmath
-the math is waiting to be mathed! 
+# Mental Math Grind
+
+TODO: Description

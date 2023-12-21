@@ -13,7 +13,7 @@ const App: React.FC = () => {
         </button>
         <button 
           className="flex items-center justify-center w-32 h-32 p-2 border border-black text-black font-bold rounded-lg focus:outline-none"
-          onClick={() => console.log('Navigate to Endless Mode')}
+          onClick={() => alert('Navigate to Endless Mode')}
         >
           Endless Casual Mode
         </button>
