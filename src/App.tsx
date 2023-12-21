@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
+      <h1 className="text-2xl md:text-4xl font-bold mb-8 text-black">Mental Math Practice</h1>
+      <div className="flex flex-wrap justify-around w-full max-w-2xl space-y-4 md:space-y-0">
+        <button 
+          className="flex items-center justify-center w-32 h-32 p-2 border border-black text-black font-bold rounded-lg focus:outline-none disabled:opacity-50"
+          disabled
+        >
+          Timed Mode (Coming Soon)
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button 
+          className="flex items-center justify-center w-32 h-32 p-2 border border-black text-black font-bold rounded-lg focus:outline-none"
+          onClick={() => console.log('Navigate to Endless Mode')}
+        >
+          Endless Casual Mode
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
+
