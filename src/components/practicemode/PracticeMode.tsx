@@ -65,7 +65,7 @@ export default function PracticeMode() {
         {currentQuestion.possibleAnswers.map((answer, index) => (
           <button
             key={index}
-            className={`size-32 lg:size-56 p-2 border-4 border-black text-black font-bold rounded-lg ${
+            className={`size-32 lg:size-56 p-2 border-2 border-black text-black font-bold rounded-lg ${
               selectedAnswer === answer ? 'bg-red-500' : 'bg-blue-500'
             } text-white font-bold`}
             onClick={() => handleAnswerSelect(answer)}
