@@ -6,7 +6,7 @@ const App: React.FC = () => {
   const [mode, setMode] = useState<'welcome' | 'practice'>('welcome');
 
   const enterPracticeMode = () => setMode('practice');
-  const goToMainMenu = () => setMode('welcome'); //TODO: Pass to practice mode to return to main menu?
+  //const goToMainMenu = () => setMode('welcome'); //TODO: Pass to practice mode to return to main menu?
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
